@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+	
+<nav class="navbar  navbar-light bg-light shadow" id="menu">
+
+	<button class="openbtn px-3" onclick="openNav()">☰ Menu</button>
+
+	<ul class="nav navbar-nav navbar-center">
+		<span class="navbar-text fs-4"> LADO LUMINOSO </span>
+	</ul>
+	<form class="form-inline my-2 my-lg-0 px-3">
+		 <button type="button" class="btn btn-outline-secondary my-2 my-sm-0"  data-bs-toggle="card" data-bs-target="#login-card">Login</button>
+	</form>
+	
+	
+</nav>
