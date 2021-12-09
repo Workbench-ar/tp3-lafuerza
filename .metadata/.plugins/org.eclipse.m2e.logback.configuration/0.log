@@ -1303,3 +1303,11 @@
 2021-12-08 20:44:44,738 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2021-12-08 20:44:44,741 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-12-08 20:44:44,741 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/maxpell/Documents/argentina_programa/tp3-lafuerza/LaFuerza-Turismo/src/test/resources
+2021-12-09 07:49:03,754 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-09 07:49:03,759 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-09 07:49:03,764 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-09 07:49:03,764 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/maxpell/Documents/argentina_programa/tp3-lafuerza/LaFuerza-Turismo/src/test/resources
+2021-12-09 07:49:17,083 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-09 07:49:17,085 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-09 07:49:17,088 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-09 07:49:17,089 [Worker-61: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/maxpell/Documents/argentina_programa/tp3-lafuerza/LaFuerza-Turismo/src/test/resources
