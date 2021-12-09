@@ -73,11 +73,11 @@
 			</div>
 		</div>
 
-		<div class="d-flex justify-content-center bd-highlight mt-3">
+		<div class="d-flex justify-content-center bd-highlight ">
 			<div class="py-4">
 				<form method="GET" action="guest">
 					<button type="submit"
-						class="btn fondoTransparente rounded btn-lg mt-2 cambiarLado"
+						class="btn fondoTransparente rounded btn-lg m-4 cambiarLado"
 						value=<c:choose><c:when test="${lado=='LADO OSCURO'}"> "Lado Luminoso"</c:when>
 		<c:otherwise>"Lado Oscuro"</c:otherwise></c:choose>
 						name="lado">CAMBIAR DE LADO</button>
@@ -88,7 +88,7 @@
 
 	</div>
 
-
+	<jsp:include page="/partials/footer.jsp"></jsp:include>
 
 </body>
 </html>
