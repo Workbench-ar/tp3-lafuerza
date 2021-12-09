@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+/Users/maxpell/Documents/argentina_programa/tp3-lafuerza/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-2890861906.index
-3970253145.index
-1458894352.index
-2179521210.index
-3537720599.index
-37763710.index
-3069942588.index
