@@ -28,6 +28,33 @@ public class GuestServlet extends HttpServlet implements Servlet {
 	}
 
 	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+	 	String lado = req.getParameter("lado");
+		
+		List<Attraction> attractions = attractionService.list();
+		
+		List<Attraction> attractionsFiltred = new ArrayList<Attraction>();
+		
+		for (Attraction atracction : attractions) {
+			if (atracction.getTipoAtraccion().getNombre().equals(lado)) {
+				attractionsFiltred.add(atracction);
+			} 
+		}
+	
+		Collections.shuffle(attractionsFiltred);
+		
+		req.setAttribute("attractions", attractionsFiltred);
+		req.setAttribute("lado", lado.toUpperCase() );
+		
+	
+		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/views/guest/index.jsp");
+		dispatcher.forward(req, resp);
+		
+
+	}
+	
+	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 	 	String lado = req.getParameter("lado");

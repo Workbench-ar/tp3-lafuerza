@@ -8,8 +8,16 @@
 
 
 
+	<button data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button" class="openbtn px-3<c:choose><c:when test="${lado=='LADO OSCURO'}"> btn btn-dark text-secondary</c:when>
+		<c:otherwise>btn btn-light </c:otherwise></c:choose>" >☰ Menu</button>
+		
+	<!-- 	  <button class="btn float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+                <i class="bi bi-arrow-right-square-fill fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+            </button> -->
+            
+ <%--            
 	<button class="openbtn px-3<c:choose><c:when test="${lado=='LADO OSCURO'}"> btn btn-dark text-secondary</c:when>
-		<c:otherwise>btn btn-light </c:otherwise></c:choose>" onclick="openNav()">☰ Menu</button>
+		<c:otherwise>btn btn-light </c:otherwise></c:choose>" onclick="openNav()">☰ Menu</button> --%>
 
 
 	<ul class="nav navbar-nav navbar-center">

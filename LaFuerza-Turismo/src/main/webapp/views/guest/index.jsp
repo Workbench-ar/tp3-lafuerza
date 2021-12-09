@@ -7,33 +7,45 @@
 <head>
 <jsp:include page="/partials/head.jsp"></jsp:include>
 <link href="/LaFuerza-Turismo/assets/css/navguest.css" rel="stylesheet" />
-<link href="/LaFuerza-Turismo/assets/css/sidebar.css" rel="stylesheet" />
 <link href="/LaFuerza-Turismo/assets/css/guest.css" rel="stylesheet" />
 <link href="/LaFuerza-Turismo/assets/css/login-modal.css"
 	rel="stylesheet" />
+<link href="/LaFuerza-Turismo/assets/css/sidebar.css" rel="stylesheet" />
 
-
-
-<script type="text/javascript"
-	src="/LaFuerza-Turismo/assets/js/sidebar.js" defer></script>
+<link
+	href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+	rel="stylesheet">
 
 
 </head>
 
 <body>
-	<jsp:include page="/partials/sidebar.jsp"></jsp:include>
 
-	<div id="main" class="px-0  <c:choose><c:when test="${lado=='LADO OSCURO'}">themeOscuro</c:when></c:choose>">
+	<jsp:include page="/partials/login-modal.jsp"></jsp:include>
 
-		<jsp:include page="/partials/navGuest.jsp"></jsp:include>
 
+
+	<jsp:include page="/partials/navGuest.jsp"></jsp:include>
+
+
+
+	<c:choose>
+		<c:when test="${lado=='LADO OSCURO'}">
+			<jsp:include page="/partials/sidebarDark.jsp"></jsp:include></c:when>
+		<c:otherwise><jsp:include
+				page="/partials/sidebarLight.jsp"></jsp:include>
+		</c:otherwise>
+	</c:choose>
+
+
+
+	<div id="main"
+		class="px-0  <c:choose><c:when test="${lado=='LADO OSCURO'}">themeOscuro</c:when></c:choose>">
 		<header
-			class="<c:choose><c:when test="${lado=='LADO OSCURO'}"> oscuro</c:when>
-		<c:otherwise>luminoso </c:otherwise></c:choose>"
+			class="<c:choose><c:when test="${lado=='LADO OSCURO'}"> oscuro</c:when><c:otherwise>luminoso </c:otherwise></c:choose>"
 			id="header"> </header>
 
 
-		<jsp:include page="/partials/login-modal.jsp"></jsp:include>
 
 		<div class="container mt-5 py-4 px-5  rounded" id="fondo-cards">
 			<div class="row m-4">
@@ -58,7 +70,9 @@
 					<div class="col-sm-4">
 						<div
 							class="card <c:choose><c:when test="${lado=='LADO OSCURO'}"> border-dark</c:when></c:choose> ">
-							<img class="card-img-top" src="/LaFuerza-Turismo/assets/img/attractions/cards/<c:out value="${attraction.id}"></c:out>.jpeg" alt="Card image cap">
+							<img class="card-img-top"
+								src="/LaFuerza-Turismo/assets/img/attractions/cards/<c:out value="${attraction.id}"></c:out>.jpeg"
+								alt="Card image cap">
 							<div
 								class="card-body  <c:choose><c:when test="${lado=='LADO OSCURO'}"> text-white-50 bg-dark</c:when></c:choose>">
 								<h5 class="card-title">
@@ -72,6 +86,8 @@
 				</c:forEach>
 			</div>
 		</div>
+
+
 
 		<div class="d-flex justify-content-center bd-highlight ">
 			<div class="py-4">
@@ -88,7 +104,14 @@
 
 	</div>
 
-	<jsp:include page="/partials/footer.jsp"></jsp:include>
+
+
+
+	<footer>
+		<jsp:include page="/partials/footer.jsp"></jsp:include>
+	</footer>
+
+
 
 </body>
 </html>

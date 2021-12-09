@@ -39,7 +39,7 @@
 							src="/LaFuerza-Turismo/assets/img/home/light.png">
 					</div>
 					<div class="mt-2">
-						<form method="get" action="guest">
+						<form method="post" action="guest">
 							<button type="submit"
 								class="btn fondoTransparente rounded btn-lg mt-2 iconos"
 								value="Lado Luminoso" name="lado">LUMINOSO</button>
