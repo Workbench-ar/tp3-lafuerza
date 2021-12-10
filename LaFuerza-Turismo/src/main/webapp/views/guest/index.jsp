@@ -12,19 +12,11 @@
 	rel="stylesheet" />
 <link href="/LaFuerza-Turismo/assets/css/sidebar.css" rel="stylesheet" />
 
-<link
-	href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-	rel="stylesheet">
-
-
 </head>
 
 <body>
 
 	<jsp:include page="/partials/login-modal.jsp"></jsp:include>
-
-
-
 	<jsp:include page="/partials/navGuest.jsp"></jsp:include>
 
 
@@ -79,7 +71,18 @@
 									<c:out value="${attraction.name}"></c:out>
 								</h5>
 								<p class="card-text">"${attraction.descripcion}"</p>
-								<a href="#" class="btn btn-secondary">Info</a>
+
+								<form method="get"
+									action="guestAtracction">
+									<button type="submit"
+										class="btn btn-secondary"
+										value="${attraction.id}" name="attractionID">Info</button>
+								</form>
+								
+								
+
+
+
 							</div>
 						</div>
 					</div>

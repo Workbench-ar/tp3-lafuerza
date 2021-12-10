@@ -10,7 +10,7 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
 	rel="stylesheet" />
 <link href="/LaFuerza-Turismo/assets/css/home.css" rel="stylesheet" />
-<link href="/LaFuerza-Turismo/assets/css/login3.css" rel="stylesheet" />
+<!-- <link href="/LaFuerza-Turismo/assets/css/login3.css" rel="stylesheet" /> -->
 <script defer type="text/javascript"
 	src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
 
@@ -39,7 +39,7 @@
 							src="/LaFuerza-Turismo/assets/img/home/light.png">
 					</div>
 					<div class="mt-2">
-						<form method="post" action="guest">
+						<form method="get" action="guest">
 							<button type="submit"
 								class="btn fondoTransparente rounded btn-lg mt-2 iconos"
 								value="Lado Luminoso" name="lado">LUMINOSO</button>

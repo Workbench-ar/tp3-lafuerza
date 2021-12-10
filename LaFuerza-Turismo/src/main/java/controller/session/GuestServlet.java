@@ -37,7 +37,7 @@ public class GuestServlet extends HttpServlet implements Servlet {
 		List<Attraction> attractionsFiltred = new ArrayList<Attraction>();
 		
 		for (Attraction atracction : attractions) {
-			if (atracction.getTipoAtraccion().getNombre().equals(lado)) {
+			if (atracction.getTipoAtraccion().getNombre().toUpperCase().equals(lado.toUpperCase())) {
 				attractionsFiltred.add(atracction);
 			} 
 		}
@@ -64,7 +64,7 @@ public class GuestServlet extends HttpServlet implements Servlet {
 		List<Attraction> attractionsFiltred = new ArrayList<Attraction>();
 		
 		for (Attraction atracction : attractions) {
-			if (atracction.getTipoAtraccion().getNombre().equals(lado)) {
+			if (atracction.getTipoAtraccion().getNombre().toUpperCase().equals(lado.toUpperCase())) {
 				attractionsFiltred.add(atracction);
 			} 
 		}

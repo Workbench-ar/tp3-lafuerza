@@ -4,7 +4,6 @@
 	background-color: rgba(255, 255, 255, 0.6);
 }
 
-
 #back {
 	background-image: url('../img/home/img-background-home.jpeg');
 	height: 100vh;
@@ -24,4 +23,15 @@
 .luz {
 	width: 100vw;
 	height: 50vh;
+}
+
+#botones {
+	margin-top: 20vh;
+	color: black;
+}
+
+.iconos {
+	width: 150px;
+	color: black;
+	font-size: large;
 }
