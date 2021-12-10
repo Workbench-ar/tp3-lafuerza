@@ -59,8 +59,7 @@ public class GuestServlet extends HttpServlet implements Servlet {
 		
 	 	String lado = req.getParameter("lado");
 		
-		List<Attraction> attractions = attractionService.list();
-		
+		List<Attraction> attractions = attractionService.list();	
 		List<Attraction> attractionsFiltred = new ArrayList<Attraction>();
 		
 		for (Attraction atracction : attractions) {

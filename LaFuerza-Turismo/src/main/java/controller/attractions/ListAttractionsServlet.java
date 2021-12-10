@@ -13,7 +13,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import model.Attraction;
 import services.AttractionService;
 
-@WebServlet("/attractions/index.do")
+@WebServlet("/attractions")
 public class ListAttractionsServlet extends HttpServlet implements Servlet {
 	
 
@@ -31,8 +31,9 @@ public class ListAttractionsServlet extends HttpServlet implements Servlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		List<Attraction> attractions = attractionService.list();
 		req.setAttribute("attractions", attractions);
+		
 
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/views/attractions/index.jsp");
+		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/views/attractions/index2.jsp");
 		dispatcher.forward(req, resp);
 
 	}

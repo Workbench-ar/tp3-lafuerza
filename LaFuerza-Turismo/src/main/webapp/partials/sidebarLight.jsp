@@ -21,7 +21,7 @@
 					class="list-group-item list-group-item-action list-group-item-light  p-3 text text-dark"
 					href="#!">La Fuerza</a> <a
 					class="list-group-item list-group-item-action list-group-item-light  p-3 text ttext-dark"
-					href="#!">Atracciones</a> <a
+					href="/LaFuerza-Turismo/attractions">Atracciones</a> <a
 					class="list-group-item list-group-item-action list-group-item-light   p-3 text text-dark"
 					href="#!">Promociones</a> <a
 					class="list-group-item list-group-item-action list-group-item-light   p-3 text text-dark"

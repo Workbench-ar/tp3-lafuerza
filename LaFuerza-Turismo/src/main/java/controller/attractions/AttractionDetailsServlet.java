@@ -1,4 +1,5 @@
-package controller.session;
+package controller.attractions;
+
 
 import java.io.IOException;
 
@@ -13,8 +14,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import model.Attraction;
 import services.AttractionService;
 
-@WebServlet("/guestAtracction")
-public class GuestAttractionDetailsServlet extends HttpServlet implements Servlet {
+@WebServlet("/atracction")
+public class AttractionDetailsServlet extends HttpServlet implements Servlet {
 
 	private static final long serialVersionUID = -6744456932336971308L;
 	private AttractionService attractionService;
@@ -36,7 +37,7 @@ public class GuestAttractionDetailsServlet extends HttpServlet implements Servle
 		req.setAttribute("attraction", attraction);
 		req.setAttribute("lado", attraction.getTipoAtraccion().getNombre().toUpperCase() );
 		
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/views/guest/attraction.jsp");
+		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/views/attractions/details.jsp");
 		dispatcher.forward(req, resp);
 		
 	}
@@ -52,7 +53,7 @@ public class GuestAttractionDetailsServlet extends HttpServlet implements Servle
 		req.setAttribute("attraction", attraction);
 		req.setAttribute("lado", attraction.getTipoAtraccion().getNombre().toUpperCase() );
 		
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/views/guest/attraction.jsp");
+		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/views/attractions/details.jsp");
 		dispatcher.forward(req, resp);
 		
 	}

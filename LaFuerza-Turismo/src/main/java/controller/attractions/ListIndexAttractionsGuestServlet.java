@@ -15,7 +15,7 @@ import model.Attraction;
 import services.AttractionService;
 
 @WebServlet("/guest/index.guest")
-public class ListAttractionsGuestServlet extends HttpServlet implements Servlet {
+public class ListIndexAttractionsGuestServlet extends HttpServlet implements Servlet {
 	
 
 	private static final long serialVersionUID = 2552664789545594075L;

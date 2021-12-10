@@ -31,9 +31,6 @@
 
 	<div id="main"
 		class="px-0  <c:choose><c:when test="${lado=='LADO OSCURO'}">themeOscuro</c:when></c:choose>">
-		<header
-			class="<c:choose><c:when test="${lado=='LADO OSCURO'}"> oscuro</c:when><c:otherwise>luminoso </c:otherwise></c:choose>"
-			id="header"> </header>
 
 
 		<div

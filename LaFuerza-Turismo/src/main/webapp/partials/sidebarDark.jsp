@@ -22,13 +22,21 @@
 					class="list-group-item list-group-item-action list-group-item-dark  p-3 text text-dark"
 					href="#!">La Fuerza</a> <a
 					class="list-group-item list-group-item-action list-group-item-dark  p-3 text text-dark"
-					href="#!">Atracciones</a> <a
+					href="/LaFuerza-Turismo/attractions" value="Lado Oscuro" name="lado">Atracciones</a> <a
 					class="list-group-item list-group-item-action list-group-item-dark   p-3 text text-dark"
 					href="#!">Promociones</a> <a
 					class="list-group-item list-group-item-action list-group-item-dark   p-3 text text-dark"
 					href="#!">Nosotros</a> <a
 					class="list-group-item list-group-item-action list-group-item-dark  p-3 text text-dark"
 					href="#!">contacto</a>
+					
+					
+					
+					<form method="get" action="/LaFuerza-Turismo/attractions">
+							<button type="submit"
+								class="list-group-item list-group-item-action list-group-item-dark  p-3 text text-dark"
+								value="LADO OSCURO" name="lado">Atracciones</button>
+						</form>
 		
 			</div>
 		</div>

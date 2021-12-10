@@ -70,7 +70,7 @@
 								</h5>
 								<p class="card-text">"${attraction.descripcion}"</p>
 
-								<form method="get" action="guestAtracction">
+								<form method="get" action="atracction">
 									<button type="submit" class="btn btn-secondary"
 										value="${attraction.id}" name="attractionID">Info</button>
 								</form>
