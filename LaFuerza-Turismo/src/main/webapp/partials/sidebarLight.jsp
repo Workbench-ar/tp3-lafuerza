@@ -1,3 +1,5 @@
+<link href="/LaFuerza-Turismo/assets/css/sidebar.css" rel="stylesheet" />
+
 <div class="offcanvas offcanvas-start 
 " tabindex="-1" id="offcanvas"
 	data-bs-keyboard="true" data-bs-backdrop="true" aria-labelledby="offcanvasWithBackdropLabel">

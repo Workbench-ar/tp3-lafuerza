@@ -7,10 +7,8 @@
 <html>
 <head>
 <jsp:include page="/partials/head.jsp"></jsp:include>
-<link href="/LaFuerza-Turismo/assets/css/navguest.css" rel="stylesheet" />
-<link href="/LaFuerza-Turismo/assets/css/login-modal.css"
-	rel="stylesheet" />
-<link href="/LaFuerza-Turismo/assets/css/sidebar.css" rel="stylesheet" />
+
+
 <link href="/LaFuerza-Turismo/assets/css/guestAttraction.css"
 	rel="stylesheet" />
 
@@ -55,7 +53,7 @@
 
 
 					</div>
-					<div class="col-md-8 align-self-center me-auto">
+					<div class="col-md-9 align-self-center me-auto">
 						<h3>
 							<c:out value="${attraction.name}"></c:out>
 						</h3>

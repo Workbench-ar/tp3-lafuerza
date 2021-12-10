@@ -6,11 +6,9 @@
 <html>
 <head>
 <jsp:include page="/partials/head.jsp"></jsp:include>
-<link href="/LaFuerza-Turismo/assets/css/navguest.css" rel="stylesheet" />
+
 <link href="/LaFuerza-Turismo/assets/css/guest.css" rel="stylesheet" />
-<link href="/LaFuerza-Turismo/assets/css/login-modal.css"
-	rel="stylesheet" />
-<link href="/LaFuerza-Turismo/assets/css/sidebar.css" rel="stylesheet" />
+
 
 </head>
 
@@ -72,14 +70,12 @@
 								</h5>
 								<p class="card-text">"${attraction.descripcion}"</p>
 
-								<form method="get"
-									action="guestAtracction">
-									<button type="submit"
-										class="btn btn-secondary"
+								<form method="get" action="guestAtracction">
+									<button type="submit" class="btn btn-secondary"
 										value="${attraction.id}" name="attractionID">Info</button>
 								</form>
-								
-								
+
+
 
 
 
